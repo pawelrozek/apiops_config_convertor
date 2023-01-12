@@ -12,13 +12,8 @@ echo "Starting..."
 echo " " >> $file
 while IFS= read -r line; do
     # echo -e "$line\n"
-    # Check if main section, then write to file as is...
-    firstChar=$(cut -c1 <<< $line)
-    
-    # if [[ "$firstChar" == " " ]]; then
-    #   echo "blank :$firstChar:"
-    # fi
     if [[ $line == apimServiceName* ]] || [[ $line == "namedValues:" ]] || [[ $line == "loggers:" ]] || [[ $line == "diagnostics:" ]] || [[ $line == "apis:" ]] || [[ $line == "backends:" ]] ; then
+      # main titles
       echo -e "$line" >> $newfile
       weAreIn="$line"
     elif [[ $line == "  - name:"* ]]; then

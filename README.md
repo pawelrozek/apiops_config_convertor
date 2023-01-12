@@ -22,6 +22,7 @@ If you don't provide a file name, you will be asked at the start of the script f
 
 For best results, please have the script in the same directory as your configuration file.
 
+See the sample [input](configuration.prod.yaml) and [output](new_configuration.prod.yaml) that was generated at the time I built this script.
 
 ### Notes:
 
