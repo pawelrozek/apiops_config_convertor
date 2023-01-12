@@ -8,5 +8,6 @@ Please note this script is very basic and works only with properly formatted yam
 
 ## Usage:
 
-To use the script, download the bash script and run it using ./converter.sh. If you supply filename as input, you will not be asked for filename.
-For best results, please have the script in the same directory as your file.
+To use the script, download the bash script and run it using ./converter.sh. If you supply filename as input, (./converter.sh configuration.prd.yaml) you will not be asked for filename at runtime.
+If you don't provide a file name, you will be asked at the start of the program.
+For best results, please have the script in the same directory as your configuration file.
